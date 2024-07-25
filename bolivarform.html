@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formularios</title>
+    <style>
+        body {
+            background: black;
+            color: yellow;
+        }
+        table {
+            width: 100%;
+            height: 600px;
+            border: 3px solid yellow;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        td {
+            background-color: #909fc1;
+            padding: 20px;
+        }
+        form label {
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Formularios</caption>
+        
+        <!-- Primera fila -->
+        <tr>
+            <!-- Primera fila, primera columna -->
+            <td>
+                <center><h4>Formulario de Texto</h4></center>
+                <form action="resufor1.html" id="formulario" method="post">
+                    <p>
+                        <label for="nombre1">Nombre:</label>
+                        <input type="text" id="nombre1" name="nombre1"><br>
+                    </p>
+                    <p>
+                        <label for="apellido1">Apellido:</label>
+                        <input type="text" id="apellido1" name="apellido1"><br>
+                    </p>
+                    <p>
+                        <label for="nacionalidad1">Nacionalidad:</label>
+                        <input type="text" id="nacionalidad1" name="nacionalidad1"><br>
+                    </p>
+                    <br>
+                    <p>
+                        <input type="submit" value="Enviar">
+                    </p>
+                    <h3 id="respuesta"></h3>
+                </form>
+            </td>
+
+        </tr>
+    </table>
+    <script src="bolivar.js"></script>
+
+</body>
+</html>
